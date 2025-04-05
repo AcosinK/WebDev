@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {  
+            box-sizing: border-box;
+        }
+
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #030508;
+            background-image: url('img/gettyimages-1333612025-640x640.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        .sidenav { 
+            background: linear-gradient(to right, #02536b, #050c46); 
+            padding: 1em; 
+            text-align: center; 
+        }
+
+        .sidenav a { 
+            color: #0bcce6; 
+            margin: 0 15px; 
+            text-decoration: none; 
+        }
+
+        .sidenav a:hover {
+            text-decoration: underline; 
+        }
+
+        .projectlist {
+            padding: 20px;  
+            color: #0bcce6;
+            font-family: Arial, sans-serif; 
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .column {
+            width: 30%;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .column img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .column .text {
+            color: #0bcce6;
+            font-size: 24px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+
+        @media (max-width: 768px) {
+            .sidenav {
+                padding: 0.5em;
+            }
+
+            .sidenav a {
+                display: block;
+                margin: 10px 0;
+                font-size: 16px;
+            }
+
+            .projectlist h1 {
+                font-size: 2rem;
+            }
+
+            .column {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .column img {
+                width: 100%;
+                height: auto;
+            }
+
+            .column .text {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="sidenav">
+        <a href="homepage.html">Home</a>
+        <a href="productpage.html">Services</a>
+        <a href="Aboutus.html">About Us</a>
+        <a href="contactmepage.html">Contact Us</a>
+        <a href="Aboutmepage.html">About Me</a>
+    </div>
+
+
+    <div class="projectlist">
+        <h1>Our Services</h1>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <a href="itsupport.html">
+                <img src="img/Types-of-Remote-IT-Support-1.webp" alt="IT Support">
+                <div class="text">IT Support</div>
+            </a>
+        </div>
+
+        <div class="column">
+            <a href="cloudsolutions.html">
+                <img src="img/images.jfif" alt="Cloud Solutions">
+                <div class="text">Cloud Solutions</div>
+            </a>
+        </div>
+
+        <div class="column">
+            <a href="cybersecurity.html">
+                <img src="img/360_F_245636933_kY23ohGptK5t6n8wGSXIgLgVXWeHJRct.jpg" alt="Cybersecurity">
+                <div class="text">Cybersecurity</div>
+            </a>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

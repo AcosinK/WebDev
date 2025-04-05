@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberLink Services</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #030508;
+      background-image: url('img/gettyimages-1333612025-640x640.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      color: #0bcce6;
+    }
+
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(to right, #02536b, #050c46);
+      padding: 15px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: #0bcce6;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      padding-top: 70px; 
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+
+    .hero .cta-button {
+      padding: 15px 30px;
+      background: linear-gradient(to right, #02536b, #050c46);
+      color: white;
+      border: none;
+      font-size: 1.2em;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero .cta-button:hover {
+      background: linear-gradient(to right, #050c46, #02536b);
+    }
+
+    .content {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    @media (max-width: 576px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+
+      .hero p {
+        font-size: 1em;
+      }
+
+      .navbar a {
+        font-size: 16px;
+        margin: 0 10px;
+      }
+
+      .hero .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar navbar-expand-lg navbar-dark">
+    <a class="  -brand" href="homepage.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="productpage.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactmepage.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Aboutmepage.html">About Me</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>Welcome to CyberLink Services</h1>
+    <p>Your Trusted Partner for IT Solutions</p>
+    <a href="productpage.html" class="cta-button">Explore Our Services</a>
+  </div>
+
+  <div class="content">
+    <p>Some content here to highlight more of what we offer.</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #030508;
+            margin: 0;
+            padding: 0;
+            background-image: url('img/gettyimages-1333612025-640x640.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #0bcce6;
+            height: 100vh; /* Ensure the body takes up the full height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidenav {
+            background: linear-gradient(to right, #02536b, #050c46);
+            padding: 1em;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .sidenav a {
+            color: #0bcce6;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .sidenav a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-container {
+            background-color: transparent; /* Transparent background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            backdrop-filter: blur(100px);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            color: white;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #02536b;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.9); /* Light transparent background for form fields */
+        }
+
+        button {
+            background: linear-gradient(to right, #02536b, #050c46);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #050c46,#02536b);
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 10px;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .contact-container {
+                padding: 20px;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="homepage.html">Home</a>
+        <a href="productpage.html">Services</a>
+        <a href="Aboutus.html">About Us</a>
+        <a href="contactmepage.html">Contact Us</a>
+        <a href="Aboutmepage.html">About Me</a>
+    </div>
+
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+        <form action="your-server-side-script.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="form-footer">
+            <p>Thank you for reaching out!</p>
+        </div>
+    </div>
+
+</body>
+</html>
